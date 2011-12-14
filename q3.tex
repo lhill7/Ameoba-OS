@@ -1,0 +1,285 @@
+\documentclass{beamer}
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+\usepackage{graphicx}
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+
+\title[Amoeba OS] % (optional, use only with long paper titles)
+{Amoeba Distributed Operating System}
+
+
+\author[Lyness Hill] % (optional, use only with lots of authors)
+{Lyness Hill}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Loyola University Chicago] % (optional, but mostly needed)
+{
+  Lyness Hill
+  Department of Computer Science\\
+  Loyola University Chicago 
+}
+
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[12/14/11] % (optional, should be abbreviation of conference name)
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{Operating Systems}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+  \end{frame}
+
+\begin{frame}
+  \includegraphics[scale=0.5] {Amoeba}
+\end{frame}
+
+\section{Introduction}
+
+\subsection{History}
+
+\begin{frame}{History}
+ 	\begin{itemize}
+	\item Created by Virije University Prof. Andrew S. Tananbaum and Sape Mullender and Robert van Renesse (two of Tananbaum's students)
+	\item Began development in 1981
+	\item First release in 1983
+	\item Last update was 1996 
+	\end{itemize} 
+\end{frame}
+
+\subsection{The Concept}
+
+\begin{frame}{The Concept}
+	""Provide users with the illusion of a single, powerful, timesharing system" 
+\end{frame}
+
+\subsection{Design Goals}
+
+\begin{frame}{Design Goals}
+	\begin{itemize}
+	\item Small Distributed Operating System
+	\item Fault Tolerance
+	\item Parallelism 
+	\item Transparency
+	\end{itemize}
+\end{frame}
+
+\subsection{Architecture}
+
+\begin{frame}{Architecture}
+\includegraphics[scale=0.5]{Fig21}
+\end{frame}
+
+\begin{frame}{Architecture}
+	\begin{itemize}
+	\item Processor Pool
+		\begin{itemize}
+		\item Multiple CPU's
+		\item Assigns processors as needed 
+		\end{itemize}
+	\item Workstations (Disk-less)
+	\item WAN Gateway
+	\item Specialized Server
+	\end{itemize}
+
+\end{frame}
+
+\section{The System}
+
+\subsection{Processes And Threads}
+
+\begin{frame}{Processes And Threads}
+\end{frame}
+
+\subsection{Scheduling}
+\begin{frame}{Scheduling}
+\end{frame}
+
+\subsection{Kernel Memory Management}
+\begin{frame}{Kernel Memory Management}
+\end{frame}
+
+\section{What Makes A Good Operating System?}
+
+\subsection {What Makes A Good Operating System}
+\begin{frame}{Make Titles Informative. Use Uppercase Letters.}{Subtitles are optional.}
+  % - A title should summarize the slide in an understandable fashion
+  %   for anyone how does not follow everything on the slide itself.
+
+  \begin{itemize}
+  \item
+    Use \texttt{itemize} a lot.
+  \item
+    Use very short sentences or short phrases.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Make Titles Informative.}
+
+  You can create overlays\dots
+  \begin{itemize}
+  \item using the \texttt{pause} command:
+    \begin{itemize}
+    \item
+      First item.
+      \pause
+    \item    
+      Second item.
+    \end{itemize}
+  \item
+    using overlay specifications:
+    \begin{itemize}
+    \item<3->
+      First item.
+    \item<4->
+      Second item.
+    \end{itemize}
+  \item
+    using the general \texttt{uncover} command:
+    \begin{itemize}
+      \uncover<5->{\item
+        First item.}
+      \uncover<6->{\item
+        Second item.}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\subsection{Previous Work}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+
+
+\section{Our Results/Contribution}
+
+\subsection{Main Results}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+
+\subsection{Basic Ideas for Proofs/Implementation}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+
+
+\section{Summary}
+
+\begin{frame}{Summary}
+
+  % Keep the summary *very short*.
+  \begin{itemize}
+  \item
+    The \alert{first main message} of your talk in one or two lines.
+  \item
+    The \alert{second main message} of your talk in one or two lines.
+  \item
+    Perhaps a \alert{third message}, but not more than that.
+  \end{itemize}
+  
+  % The following outlook is optional.
+  \vskip0pt plus.5fill
+  \begin{itemize}
+  \item
+    Outlook
+    \begin{itemize}
+    \item
+      Something you haven't solved.
+    \item
+      Something else you haven't solved.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+% All of the following is optional and typically not needed. 
+\appendix
+\section<presentation>*{\appendixname}
+\subsection<presentation>*{For Further Reading}
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{For Further Reading}
+    
+  \begin{thebibliography}{10}
+    
+  \beamertemplatebookbibitems
+  % Start with overview books.
+
+  \bibitem{Author1990}
+    A.~Author.
+    \newblock {\em Handbook of Everything}.
+    \newblock Some Press, 1990.
+ 
+    
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+
+  \bibitem{Someone2000}
+    S.~Someone.
+    \newblock On this and that.
+    \newblock {\em Journal of This and That}, 2(1):50--100,
+    2000.
+  \end{thebibliography}
+\end{frame}
+
+\end{document}
